@@ -1,11 +1,19 @@
 <<<<<<< HEAD
-# LunarVision AI - COMPLETED
+# LunarVision AI -> TEAM - DEV CODERS
 
-An AI-powered system for detecting water ice on the surfaces of the Moon and Mars using remote sensing satellite images.
 
-## Project Status: ✅ COMPLETED SUCCESSFULLY
 
-LunarVision AI is designed to analyze satellite imagery to identify potential water ice deposits on lunar and Martian surfaces. This system leverages machine learning techniques to process remote sensing data and provide accurate ice detection capabilities that can support future space missions and in-situ resource utilization.
+**LunarVision AI** is an advanced, AI-powered system designed to detect water ice on the surfaces of the Moon and Mars by analyzing remote sensing satellite imagery.
+
+This project aims to support space exploration missions by providing accurate and efficient ice detection tools. By leveraging state-of-the-art machine learning algorithms, particularly deep learning models trained on planetary data, LunarVision AI processes satellite images to identify and highlight regions likely to contain water ice. These insights can help scientists and mission planners select landing sites, optimize resource utilization, and ensure sustainable human presence on other celestial bodies.
+
+Our solution focuses on:
+- 🌕 Enhancing satellite image interpretation for lunar and Martian terrains
+- ❄ Identifying potential ice deposits with high confidence scores
+- 🚀 Assisting in-site resource utilization and future exploration missions
+- 💡 Making advanced space science tools accessible to researchers worldwide
+
+LunarVision AI is open-source, scientifically validated, and built to enable collaborative advancements in planetary science and exploration technologies.
 
 ## Key Features
 
