@@ -37,6 +37,16 @@ lunarvision_ai/
 ├── requirements.txt
 └── README.md
 ```
+<img width="1500" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/0a86d49e-b0d5-4e7c-9732-736cc3780562" />
+
+<img width="4470" height="1517" alt="sample_images_analysis" src="https://github.com/user-attachments/assets/e92635b7-44c7-453a-ba21-f5d1254a0275" />
+
+<img width="1664" height="1638" alt="demo_confusion_matrix" src="https://github.com/user-attachments/assets/834c66a7-7bfc-4086-8549-0589e9b45752" />
+
+<img width="1664" height="1638" alt="mars_confusion_matrix" src="https://github.com/user-attachments/assets/11b69692-bb79-43a6-bbbd-0d4e351f048f" />
+
+<img width="640" height="480" alt="test" src="https://github.com/user-attachments/assets/06f87710-1869-4446-b9c4-87aa54325316" />
+
 
 ## Installation
 
