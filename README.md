@@ -141,5 +141,24 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - European Space Agency
 - Open-source astronomy community
 =======
+## 🚀 Team Dev Coders
+
+**Team Leader:** Vishal Kumar Sahu  
+**Challenge:** ASTRA 2025 Hackathon 
+**Project:** LunarVision AI – AI-powered water ice detection for Moon and Mars  
+
+We are **Team Dev Coders**, a group of passionate developers and space enthusiasts dedicated to solving critical challenges in space exploration. Our team is led by **Vishal Kumar Sahu**, who brings expertise in AI, machine learning, and planetary science applications.
+
+Together, we are working on **LunarVision AI**, an open-source solution that leverages artificial intelligence to detect water ice from satellite images, enabling sustainable human missions beyond Earth.
+
+## ✅ ASTRA 2025 Hackathon – Where Curiosity Meets Cosmic
+
+We are proud to participate in ASTRA 2025 Hackathon, a platform where innovation, science, and imagination come together to explore the mysteries of space.
+“Where Curiosity Meets Cosmic” – this year’s theme encourages participants to push the boundaries of planetary science, resource utilization, and space exploration through technology-driven solutions.
+
+Our project LunarVision AI is our contribution to solving real challenges beyond Earth, aligning with ASTRA’s mission to empower curious minds to build the future of space exploration.
+
+### 💡 Connect with us  
+- GitHub: [(https://github.com/VISHAL-SAHU-KUMAR)]  
 # ASTRA-2025-Hackathon
 >>>>>>> 1f370f1122188185ba9cd9ac97e15c4d3947d35a
