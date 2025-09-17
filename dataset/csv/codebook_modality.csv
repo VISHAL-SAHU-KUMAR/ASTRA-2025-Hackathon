@@ -1,0 +1,9 @@
+modality_code,modality
+0,Visible
+1,SAR/Radar
+2,Thermal IR
+3,Altimetry/DEM
+4,Neutron/Gamma
+5,Spectrometer (UV/Vis/NIR)
+6,Hyperspectral (VNIR)
+7,Subsurface Radar

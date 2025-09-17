@@ -1,0 +1,15 @@
+Dataset Name,Domain,Size/Scale,ML Applications,Availability,Key Features
+HORUS Lunar PSR Dataset,Lunar Image Enhancement,100k+ calibration images,"Noise removal, Enhancement",Research (NASA FDL),Physics-based noise modeling
+ESA Ariel ABC Database,Exoplanet Atmospheres,"105,887 forward models",Atmospheric retrieval,Public (NeurIPS challenges),Realistic atmospheric simulations
+DeepMoon Crater Dataset,Crater Detection,"9,766 synthetic images","Object detection, Segmentation",Open source (GitHub),"Global DEM, crater catalogs"
+NASA JPL Mars Rover Data,Mars Surface Analysis,"6,691 labeled images","Classification, Novelty detection",Public (NASA JPL),Multi-instrument data
+LRO NAC Lunar Images,Lunar Surface Mapping,2M+ images,Terrain classification,Public (PDS),High-resolution polar data
+Chandrayaan-2 TMC Dataset,Indian Lunar Mission,500 augmented to 2k,Crater boundary detection,Research dataset,Transfer learning ready
+HiRISE Mars CO2 Frost,Mars Seasonal Changes,Annotated HiRISE data,Binary classification,Public (NASA funded),Expert-labeled frost data
+Martian/Lunar Crater Detection,Multi-planet Craters,~100 images,Multi-class detection,Kaggle/Roboflow,Mars & Moon combined
+NASA Planetary Data System,Multi-mission Archive,Petabytes of data,Various applications,Public archive,Cross-mission compatibility
+GUISS Icy Moon Simulations,Icy Moon Surfaces,Procedural generation,Stereo depth estimation,Open source (GitHub),Physically accurate rendering
+Artificial Lunar Landscape,Synthetic Lunar Data,"9,766 renders",Scene synthesis,Kaggle dataset,Diverse terrain conditions
+MoonNet High-Resolution,Lunar Features,Multiple datasets,Feature detection,Research/GitHub,Energy discovery focus
+Surface Crack Dataset,Geological Features,Crack detection data,Defect detection,Research dataset,Infrastructure monitoring
+OWLS Microscopy Data,Life Detection,DHM/VFI recordings,Autonomous detection,NASA JPL archive,Ocean worlds preparation

@@ -1,0 +1,105 @@
+Implementation Step,Lunar Ice Detection Code,Mars Ice Detection Code
+Data Loading & Preprocessing,"
+# Load LRO Mini-RF SAR data
+import h5py, numpy as np
+with h5py.File('minirf_data.h5', 'r') as f:
+    sar_image = f['SAR_image'][:]
+    cpr_map = f['CPR_map'][:]
+# Preprocess: orthorectification, noise filtering
+cpr_normalized = (cpr_map - cpr_map.mean()) / cpr_map.std()
+        ","
+# Load HiRISE frost data
+import cv2, pandas as pd
+image = cv2.imread('hirise_frost_image.tif')
+labels = pd.read_csv('expert_frost_labels.csv')
+# Preprocessing: color normalization, augmentation
+image_norm = cv2.normalize(image, None, 0, 255, cv2.NORM_MINMAX)
+        "
+Model Architecture Setup,"
+# U-Net for ice segmentation
+import tensorflow as tf
+model = tf.keras.Sequential([
+    tf.keras.layers.Conv2D(64, 3, activation='relu', padding='same'),
+    tf.keras.layers.Conv2D(64, 3, activation='relu', padding='same'),
+    tf.keras.layers.MaxPooling2D(),
+    # ... encoder layers
+    tf.keras.layers.UpSampling2D(),
+    tf.keras.layers.Conv2D(1, 1, activation='sigmoid')  # binary ice mask
+])
+        ","
+# YOLOv8 for frost detection
+from ultralytics import YOLO
+model = YOLO('yolov8n.pt')  # Start with pretrained weights
+# Configure for frost detection
+model.model[-1].nc = 1  # Single class: frost
+model.model[-1].anchors = model.model[-1].anchors.clone()
+        "
+Training Configuration,"
+# Physics-informed loss for lunar ice
+def physics_loss(y_true, y_pred, temperature_map):
+    binary_loss = tf.keras.losses.binary_crossentropy(y_true, y_pred)
+    # Ice should correlate with cold temperatures
+    temp_penalty = tf.reduce_mean(y_pred * temperature_map)  
+    return binary_loss + 0.1 * temp_penalty
+
+model.compile(optimizer='adam', loss=physics_loss)
+        ","
+# Training with expert labels
+results = model.train(
+    data='frost_dataset.yaml',  # Dataset configuration
+    epochs=100,
+    imgsz=640,
+    batch_size=16,
+    augment=True,  # Data augmentation for frost variations
+    mosaic=0.5,    # Mosaic augmentation probability
+    val=True
+)
+        "
+Validation & Testing,"
+# Validation with ground truth
+from sklearn.metrics import confusion_matrix, classification_report
+y_pred = model.predict(test_images)
+y_pred_binary = (y_pred > 0.5).astype(int)
+cm = confusion_matrix(y_true.flatten(), y_pred_binary.flatten())
+print(classification_report(y_true.flatten(), y_pred_binary.flatten()))
+        ","
+# Validation against Phoenix lander data
+phoenix_images = load_phoenix_validation_set()
+predictions = model.predict(phoenix_images)
+# Calculate metrics for frost detection
+precision, recall, f1 = calculate_detection_metrics(predictions, phoenix_ground_truth)
+print(f""Frost Detection - P: {precision:.3f}, R: {recall:.3f}, F1: {f1:.3f}"")
+        "
+Results Analysis,"
+# Ice distribution analysis
+import matplotlib.pyplot as plt
+total_ice_pixels = np.sum(y_pred_binary)
+ice_percentage = total_ice_pixels / y_pred_binary.size * 100
+plt.figure(figsize=(12, 4))
+plt.subplot(131); plt.imshow(test_image); plt.title('Original SAR')
+plt.subplot(132); plt.imshow(y_true); plt.title('Ground Truth')  
+plt.subplot(133); plt.imshow(y_pred_binary); plt.title(f'Predicted ({ice_percentage:.1f}% ice)')
+        ","
+# Seasonal frost analysis
+seasonal_data = []
+for sol in range(0, 687, 30):  # Martian year sampling
+    frost_coverage = analyze_frost_coverage(model, mars_images[sol])
+    seasonal_data.append({'sol': sol, 'frost_pct': frost_coverage})
+plt.plot([d['sol'] for d in seasonal_data], [d['frost_pct'] for d in seasonal_data])
+plt.title('Mars Seasonal Frost Coverage')
+        "
+Model Deployment,"
+# Model deployment for operational use
+model.save('lunar_ice_detection_model.h5')
+# Convert to TensorFlow Lite for edge deployment
+converter = tf.lite.TFLiteConverter.from_saved_model('lunar_ice_model')
+tflite_model = converter.convert()
+with open('lunar_ice_model.tflite', 'wb') as f:
+    f.write(tflite_model)
+        ","
+# Real-time frost monitoring deployment
+def process_new_hirise_image(image_path):
+    results = model.predict(image_path, conf=0.7)
+    frost_detections = results[0].boxes
+    return frost_detections.xyxy.cpu().numpy()  # Bounding boxes
+        "

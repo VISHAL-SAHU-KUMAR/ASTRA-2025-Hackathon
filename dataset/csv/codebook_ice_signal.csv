@@ -1,0 +1,6 @@
+ice_signal_strength_code,ice_signal_strength
+1,Very weak
+2,Weak/context
+3,Moderate proxy
+4,Strong indicator
+5,Direct detection

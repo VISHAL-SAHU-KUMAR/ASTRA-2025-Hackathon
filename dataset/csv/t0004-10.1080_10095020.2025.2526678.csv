@@ -1,0 +1,7 @@
+"Threshold","Satisfied the CPR only","Satisfied CPR and other radar metrics",,"Satisfied CPR and topographical metrics",,"Satisfied CPR and environmental metrics",
+"Total","Reduced","Total","Reduced","Total","Reduced"
+"CPR>0.8","1584101","41992","1542109","972547","611554","392323","1191778"
+"CPR>0.9","786673","22823","763850","469375","317298","222009","564664"
+"CPR>1.0","390305","10212","380093","228768","161537","124867","265438"
+"CPR>1.1","196282","4152","192130","113872","82410","69951","126331"
+"CPR>1.2","100937","1594","99343","58505","42432","39116","61821"

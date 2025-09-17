@@ -1,0 +1,6 @@
+label_quality_code,label_quality
+0,No labels / coarse proxy
+1,Derived/weak labels
+2,Expert labels (limited)
+3,Good labels (derived+expert)
+4,Strong labels (direct evidence)

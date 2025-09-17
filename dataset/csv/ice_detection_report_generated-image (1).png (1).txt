@@ -1,0 +1,15 @@
+
+        LunarVision AI - Ice Detection Report
+        ====================================
+        
+        Image: generated-image (1).png
+        Analysis Date: 2025-09-17
+        Detected Ice Probability: 78%
+        Confidence Score: 85%
+        Potential Ice Regions: 3
+        
+        Summary:
+        • Ice detected in 3 distinct regions
+        • Highest confidence in central region
+        • Recommended for further investigation
+        

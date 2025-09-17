@@ -1,0 +1,23 @@
+Dataset Name,Planet/Mission,Data Type,Resolution/Scale,Dataset Size,Ice Detection Application,Access Method,Download Links
+NASA LRO Mini-RF Radar Data,Moon/LRO,S-band SAR CPR maps,150m/pixel SAR,2TB radar archive,PSR water ice mapping,PDS Geosciences Node,https://pds-geosciences.wustl.edu/lro/lro-l-mrflro-4-cdr-v1/
+Chandrayaan-1 Mini-SAR Ice Data,Moon/Chandrayaan-1,S-band SAR imagery,75m/pixel SAR,500GB SAR data,Polar ice deposit detection,ISRO Data Archive,https://pradan.issdc.gov.in/ch1/
+LCROSS Impact Plume Analysis,Moon/LCROSS,Spectral impact data,Spectrometer resolution,100MB spectral,Impact water confirmation,NASA PDS archive,https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/LCROSS/
+LRO DIVINER Thermal Data,Moon/LRO,Thermal infrared maps,320m/pixel thermal,5TB thermal archive,Temperature gradient analysis,PDS Geosciences Node,https://pds-geosciences.wustl.edu/lro/lro-l-dlre-4-rdr-v1/
+LRO LOLA Topography Data,Moon/LRO,Laser altimetry DEM,5m/pixel elevation,50GB topography,Topographic ice correlation,PDS Geosciences Node,https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/
+Lunar Neutron Spectrometer Data,Moon/Lunar Prospector,Epithermal neutron maps,45km/pixel neutron,200MB neutron maps,Hydrogen abundance mapping,PDS PPI Node,https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&id=pds://PPI/LP-L-NS-5-RDR-V1.0
+Chang'E Lunar Sample Analysis,Moon/Chang'E-5,Sample reflectance spectra,nm-scale spectra,10MB sample spectra,Surface water validation,Chang'E Data Center,https://moon.bao.ac.cn/searchOrder.search
+HORUS Enhanced PSR Images,Moon/LRO,Enhanced visible images,0.5m/pixel enhanced,100k+ enhanced images,Shadow region enhancement,NASA FDL archive,https://ml4physicalsciences.github.io/2020/
+HiRISE CO2 Frost Detection,Mars/MRO,Visible frost imagery,25cm/pixel visible,2GB expert-labeled,Seasonal frost mapping,JPL/NASA funded,https://ml.jpl.nasa.gov/datasets.html
+Phoenix Lander Ice Sublimation,Mars/Phoenix,Time-series excavation,mm-scale excavation,50MB time-series,Ice sublimation modeling,NASA PDS archive,https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/Phoenix/
+Mars CRISM Hyperspectral Ice,Mars/MRO,Hyperspectral VNIR,18m/pixel hyperspectral,50TB hyperspectral,Mineral ice detection,PDS Geosciences Node,https://pds-geosciences.wustl.edu/mro/mro-m-crism-3-rdr-v1/
+SHARAD/MARSIS Subsurface Ice,Mars/MRO,Subsurface radar,15m/300-1500m depth,10TB radar archive,Subsurface ice mapping,PDS Geosciences Node,https://pds-geosciences.wustl.edu/mro/mro-m-sharad-5-radargram-v1/
+Mars TES Thermal Ice Maps,Mars/MGS,Thermal emission spectra,3km/pixel thermal,1TB thermal spectra,Thermal ice identification,PDS Atmospheres Node,https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/Mars/
+THEMIS Seasonal Ice Changes,Mars/Odyssey,Thermal infrared maps,100m/pixel thermal,2TB seasonal maps,Seasonal cycle analysis,PDS Atmospheres Node,https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/Mars/
+Mars Odyssey Neutron Data,Mars/Odyssey,Neutron/gamma-ray maps,550km/pixel neutron,100MB neutron/gamma,Subsurface water mapping,PDS PPI Node,https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&id=pds://PPI/ODY-M-GRS-5-ELEM-V1.0
+MRO CTX Ice Context Images,Mars/MRO,Visible context images,6m/pixel context,20TB context archive,Frost context analysis,PDS Imaging Node,https://pds-imaging.jpl.nasa.gov/data/mro/mars_reconnaissance_orbiter/ctx/
+DeepMoon Crater Dataset,Moon/Synthetic,Synthetic lunar DEM,20m/pixel synthetic,2GB synthetic DEM,Crater ice correlation,GitHub open source,https://github.com/silburt/DeepMoon
+Artificial Lunar Landscape,Moon/Synthetic,Procedural landscapes,Variable procedural,500MB landscapes,Terrain ice modeling,Kaggle dataset,https://www.kaggle.com/datasets/romainpessia/artificial-lunar-rocky-landscape-dataset
+Martian/Lunar Crater Detection,Moon+Mars/Mixed,Annotated crater images,Mixed resolutions,100MB crater annotations,Multi-planet ice detection,Kaggle/Roboflow,https://www.kaggle.com/datasets/lincolnzh/martianlunar-crater-detection-dataset
+NASA JPL Mars Rover Dataset,Mars/MSL,Multi-instrument rover data,256x256 pixel browse,25GB rover archive,Surface ice validation,NASA JPL archive,https://ml.jpl.nasa.gov/datasets.html
+GUISS Icy Moon Simulations,Icy Moons/Synthetic,Stereo depth estimation,Stereo pair depth,1GB stereo pairs,Icy surface simulation,GitHub open source,https://github.com/nasa-jpl/guiss
+Surface Crack Detection Dataset,General/Mixed,Geological crack detection,Variable crack detection,50MB crack samples,Infrastructure ice risk,Research dataset,Research institutional access

@@ -1,0 +1,9 @@
+Technique Category,Primary Applications,Key Models Used,Datasets Needed,Success Examples
+Physics-Based Deep Learning,"Image enhancement, Noise removal","U-Net, CNNs with physics constraints",Paired noisy/clean images,HORUS lunar enhancement
+Computer Vision,"Object detection, Segmentation","YOLO, Faster R-CNN, Mask R-CNN",Annotated object boundaries,"DeepMoon, PyCDA crater detection"
+Spectral Analysis ML,Atmospheric composition,"Random Forest, Neural Networks",Spectral measurements + labels,Ariel exoplanet retrievals
+Self-Supervised Learning,"Ice detection, Feature discovery","Contrastive learning, SSL",Unlabeled planetary imagery,Mars ice detection studies
+Transfer Learning,Cross-domain adaptation,Fine-tuned pretrained models,Source + target domain data,NASA rover vision systems
+Multi-Modal Fusion,Multi-sensor integration,Late/Early fusion architectures,Multi-sensor observations,Multi-instrument analysis
+Generative Models,Synthetic data augmentation,"GANs, VAEs, Diffusion models",Limited real + synthetic data,GUISS icy moon simulations
+Reinforcement Learning,Autonomous operations,"Policy gradient, Q-learning",Simulation environments,Mars rover autonomy
