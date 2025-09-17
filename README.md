@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LunarVision AI - COMPLETED
 
 An AI-powered system for detecting water ice on the surfaces of the Moon and Mars using remote sensing satellite images.
@@ -129,3 +130,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - NASA Planetary Data System
 - European Space Agency
 - Open-source astronomy community
+=======
+# ASTRA-2025-Hackathon
+>>>>>>> 1f370f1122188185ba9cd9ac97e15c4d3947d35a
