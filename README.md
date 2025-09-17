@@ -37,6 +37,14 @@ lunarvision_ai/
 ├── requirements.txt
 └── README.md
 ```
+## 📸 Dashboard Screenshot
+A preview of how the web app works when users upload satellite images.
+<img width="1024" height="1024" alt="generated-image (1)" src="https://github.com/user-attachments/assets/a9f67374-aaf7-48e5-a58c-37377a857a7c" />
+
+
+## 🔍 Model Prediction Output
+The AI’s analysis showing detected ice regions with confidence scores.
+
 <img width="1500" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/0a86d49e-b0d5-4e7c-9732-736cc3780562" />
 
 <img width="4470" height="1517" alt="sample_images_analysis" src="https://github.com/user-attachments/assets/e92635b7-44c7-453a-ba21-f5d1254a0275" />
